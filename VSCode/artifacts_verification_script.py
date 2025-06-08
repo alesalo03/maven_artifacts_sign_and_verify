@@ -4,6 +4,9 @@ import sys
 
 
 def verify_files(folder):
+    #Defiinisco una variabile che a fine ciclo indicherà se la verifica della firma è andata a buon fine PER OGNUNO dei file esaminati
+    all_signatures_valid = True
+
     # Scansiona ricorsivamente la directory corrente e tutte le sottodirectory
     for root, _, files in os.walk(os.path.abspath(folder)):
         for file in files:
@@ -13,7 +16,8 @@ def verify_files(folder):
             if not file.endswith('.asc'):
                 continue
 
-            # ottene il nome del file senza l'estensione .asc
+            print("\n----------------------------------------------------------------------------------")
+            # ottiene il nome del file senza l'estensione .asc
             file_without_asc = file.removesuffix(".asc")
             # verifica se il file senza l'estensione .asc esiste nella stessa directory, se non esiste lo salta
             if file_without_asc not in files:
@@ -39,22 +43,38 @@ def verify_files(folder):
                 )
                 # Analizza l'output per verificare se la firma è valida
                 if "[GNUPG:] GOODSIG" in result.stdout:
-                    print(f"\nSignature is valid for {file_with_asc}\n")
+                    print(f"\nSignature is valid for {file_with_asc}")
                 else:
-                    print(f"\nSignature verification failed for {file_with_asc}\n")
+                    print(f"\nSignature verification failed for {file_with_asc}")
+                    all_signatures_valid = False
+
+                print("----------------------------------------------------------------------------------\n")
             except subprocess.CalledProcessError as e:
                 # Gestisce gli errori di esecuzione della verifica
                 print(f"Error verifying {file_with_asc}: {e}")
                 print(f"Command output: {e.stdout}")
                 print(f"Command error: {e.stderr}")
+    
+    return all_signatures_valid
 
 # Controlla se è stato passato l'argomento che indica il percorso della cartella su cui eseguire la verifica delle firme
 if len(sys.argv) != 2:
     print("Usage: python artifacts_verification_script.py <absolute_path_to_folder>")
     sys.exit(1)
 
+print("Passato il numero corretto di argomenti\n")
+
 # Ottiene il percorso assoluto dalla riga di comando
 folder = sys.argv[1]
 
+print("Cartella da verificare:", folder)
+
 # Esegue la funzione di verifica
-verify_files(folder)
+result = verify_files(folder)
+
+print("----------------------------------------------------------------------------------\n")
+# Stampa il risultato finale della verifica
+if result:
+    print("\nTutte le firme sono valide.")
+else:
+    print("\nNon tutte le firme sono valide.")
