@@ -4,8 +4,9 @@ import sys
 
 
 def verify_files(folder):
-    #Defiinisco una variabile che a fine ciclo indicherà se la verifica della firma è andata a buon fine PER OGNUNO dei file esaminati
+    #Definisco una variabile che a fine ciclo indicherà se la verifica della firma è andata a buon fine PER OGNUNO dei file esaminati
     all_signatures_valid = True
+    number_of_signatures_verified = 0
 
     # Scansiona ricorsivamente la directory corrente e tutte le sottodirectory
     for root, _, files in os.walk(os.path.abspath(folder)):
@@ -44,9 +45,11 @@ def verify_files(folder):
                 # Analizza l'output per verificare se la firma è valida
                 if "[GNUPG:] GOODSIG" in result.stdout:
                     print(f"\nSignature is valid for {file_with_asc}")
+                    number_of_signatures_verified += 1
                 else:
                     print(f"\nSignature verification failed for {file_with_asc}")
                     all_signatures_valid = False
+                    number_of_signatures_verified += 1
 
                 print("----------------------------------------------------------------------------------\n")
             except subprocess.CalledProcessError as e:
@@ -54,6 +57,10 @@ def verify_files(folder):
                 print(f"Error verifying {file_with_asc}: {e}")
                 print(f"Command output: {e.stdout}")
                 print(f"Command error: {e.stderr}")
+
+    
+    if (number_of_signatures_verified == 0):
+        print("Nessun file .asc trovato nella cartella specificata.")
     
     return all_signatures_valid
 
