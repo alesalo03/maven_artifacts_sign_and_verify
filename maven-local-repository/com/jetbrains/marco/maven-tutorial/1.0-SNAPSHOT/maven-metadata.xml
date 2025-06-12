@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.jetbrains.marco</groupId>
+  <artifactId>maven-tutorial</artifactId>
+  <versioning>
+    <lastUpdated>20250608090438</lastUpdated>
+    <snapshot>
+      <timestamp>20250608.090438</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0-20250608.090438-1</value>
+        <updated>20250608090438</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0-20250608.090438-1</value>
+        <updated>20250608090438</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar.asc</extension>
+        <value>1.0-20250608.090438-1</value>
+        <updated>20250608090438</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom.asc</extension>
+        <value>1.0-20250608.090438-1</value>
+        <updated>20250608090438</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>1.0-SNAPSHOT</version>
+</metadata>

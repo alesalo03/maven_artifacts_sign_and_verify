@@ -1,0 +1,13 @@
+In base a cosa sei in un livello piuttosto che un altro.
+Formato e se qualcuno ha già fatto implementazione coerente con il formato SLSA
+SLSA v1.1 differenze con versioni precedenti
+OPenBao --> permette di realizzare un secret manager
+secret manager --> infrastruttura che permette di conservare in modo sicuro i segreti vari di un software (username, password, certificati, ...) e che posso interrogare via API
+
+COSE DA FARE::::::::
+Finire tutorial Docker, tutorial Kubernetes
+SLSA:
+- In base a cosa sei in un livello piuttosto che un altro?
+- Formato SLSA provenence più nel dettaglio e se qualcuno ha già fatto implementazione coerente con il formato SLSA
+- SLSA v1.1 differenze con versioni precedenti✅
+Guardare qualcosa di OpenBao

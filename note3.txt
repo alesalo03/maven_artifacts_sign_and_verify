@@ -1,0 +1,12 @@
+Considerazioni per chiamata tirocinio:
+1) per quale motivo è necessario riprodurre il giro in locale?
+2) esiste una libreria client chiamata 
+“sigstore-java” che permette di utilizzare Sigstore in 
+applicazione java. Utilizzando “sigstore-java” sarebbe 
+possibile seguire due strade: 
+- scrivere una classe Java che utilizza i metodi della 
+  libreria, utilizzando poi il plugin "exec-maven-plugin" 
+  per eseguire questa classe all'interno del lifecycle Maven
+- scrivere un plugin Maven custom che usa i metodi della 
+  libreria, aggiungendo direttamente questo plugin al 
+  lifecycle Maven
