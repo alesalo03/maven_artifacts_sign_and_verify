@@ -3,10 +3,27 @@ import subprocess
 import sys
 
 
-def verify_files(folder):
+def verify_files(folder, publickey):
     #Definisco una variabile che a fine ciclo indicherà se la verifica della firma è andata a buon fine PER OGNUNO dei file esaminati
     all_signatures_valid = True
     number_of_signatures_verified = 0
+
+    #Importo la chiave all'interno del keyring
+    try:
+        print(f"Importing public key: {publickey}")
+        subprocess.run(
+            ["gpg", "--import", publickey],
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        print("Public key imported successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to import public key: {e}")
+        print(f"Command output: {e.stdout}")
+        print(f"Command error: {e.stderr}")
+        return False
+
 
     # Scansiona ricorsivamente la directory corrente e tutte le sottodirectory
     for root, _, files in os.walk(os.path.abspath(folder)):
@@ -59,29 +76,30 @@ def verify_files(folder):
                 print(f"Command error: {e.stderr}")
 
     
-    if (number_of_signatures_verified == 0):
+    if number_of_signatures_verified == 0:
         print("Nessun file .asc trovato nella cartella specificata.")
+    else:
+        print("----------------------------------------------------------------------------------\n")
+        if all_signatures_valid:
+            print("Tutte le firme sono valide\n\n")
+        else:
+            print("Non tutte le firme sono valide\n\n")
+
     
-    return all_signatures_valid
 
 # Controlla se è stato passato l'argomento che indica il percorso della cartella su cui eseguire la verifica delle firme
-if len(sys.argv) != 2:
-    print("Usage: python artifacts_verification_script.py <absolute_path_to_folder>")
+if len(sys.argv) != 3:
+    print("Usage: python artifacts_verification_script.py <absolute_path_to_folder> <absolute_path_to_publickey.asc_file>")
     sys.exit(1)
 
 print("Passato il numero corretto di argomenti\n")
 
-# Ottiene il percorso assoluto dalla riga di comando
+# Ottiene i percorsi assoluti dalla riga di comando
 folder = sys.argv[1]
+publickey = sys.argv[2]
 
-print("Cartella da verificare:", folder)
+print("Cartella da verificare: ", folder)
+print("Path assoluto della public key: ", publickey)
 
 # Esegue la funzione di verifica
-result = verify_files(folder)
-
-print("----------------------------------------------------------------------------------\n")
-# Stampa il risultato finale della verifica
-if result:
-    print("\nTutte le firme sono valide.")
-else:
-    print("\nNon tutte le firme sono valide.")
+verify_files(folder, publickey)
