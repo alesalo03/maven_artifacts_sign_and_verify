@@ -3,31 +3,31 @@
   <groupId>com.jetbrains.marco</groupId>
   <artifactId>maven-tutorial</artifactId>
   <versioning>
-    <lastUpdated>20250608090438</lastUpdated>
+    <lastUpdated>20250612124854</lastUpdated>
     <snapshot>
-      <timestamp>20250608.090438</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20250612.124854</timestamp>
+      <buildNumber>3</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0-20250608.090438-1</value>
-        <updated>20250608090438</updated>
+        <value>1.0-20250612.124854-3</value>
+        <updated>20250612124854</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0-20250608.090438-1</value>
-        <updated>20250608090438</updated>
+        <value>1.0-20250612.124854-3</value>
+        <updated>20250612124854</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar.asc</extension>
-        <value>1.0-20250608.090438-1</value>
-        <updated>20250608090438</updated>
+        <value>1.0-20250612.124854-3</value>
+        <updated>20250612124854</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom.asc</extension>
-        <value>1.0-20250608.090438-1</value>
-        <updated>20250608090438</updated>
+        <value>1.0-20250612.124854-3</value>
+        <updated>20250612124854</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
