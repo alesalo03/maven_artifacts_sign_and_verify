@@ -31,13 +31,31 @@
           </execution>
         </executions>
         <configuration>
-          <keystore>C:/Users/Alessandro/Documents/UNI/Tirocinio/multi_provenance_example/keystore.p12</keystore>
+          <keystore>C:/Users/Alessandro/Documents/UNI/Tirocinio/multi_provenance_example/ASKeystore.jks</keystore>
           <storepass>ppppppp</storepass>
           <keypass>ppppppp</keypass>
-          <alias>myKey</alias>
-          <storetype>PKCS12</storetype>
+          <alias>ASKeystore</alias>
+          <storetype>JKS</storetype>
           <verbose>true</verbose>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jarsigner-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <id>verify-jar-signature</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>verify</goal>
+            </goals>
+            <configuration>
+              <verbose>true</verbose>
+              <certs>true</certs>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
