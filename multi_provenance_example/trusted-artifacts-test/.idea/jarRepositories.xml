@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="internal-repo" />
+      <option name="name" value="internal-repo" />
+      <option name="url" value="file:///C:/Users/Alessandro/Documents/UNI/Tirocinio/maven_artifacts_sign_and_verify/multi_provenance_example/maven-repos/internal" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />

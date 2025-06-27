@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8039a4ea-5c2d-444d-b868-fde2d4df0252" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../VSCode/artifacts_verification_script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/my.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/src/main/java/com/jetbrains/marco/Mp3Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/src/test/java/com/jetbrains/marco/Mp3UtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/classes/com/jetbrains/marco/Mp3Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-tutorial-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-tutorial-1.0-SNAPSHOT.jar.asc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-tutorial-1.0-SNAPSHOT.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/maven-tutorial-1.0-SNAPSHOT.pom.asc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/surefire-reports/TEST-com.jetbrains.marco.Mp3UtilTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/surefire-reports/com.jetbrains.marco.Mp3UtilTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-test/target/test-classes/com/jetbrains/marco/Mp3UtilTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "alesalo03"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/https://github.com/alesalo03/maven_artifacts_sign_and_verify",
+    "accountId": "a0f036cd-09f2-43ee-a893-8d04b5277008"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2yx6ZsXXZbEQBA1CW7jxYoMowzu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging master",
+    "last_opened_file_path": "C:/Users/Alessandro/Documents/UNI/Tirocinio/multi_provenance_example/trusted-lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8039a4ea-5c2d-444d-b868-fde2d4df0252" name="Changes" comment="" />
+      <created>1750763936111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750763936111</updated>
+      <workItem from="1750763937180" duration="1000000" />
+      <workItem from="1750781617382" duration="1473000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

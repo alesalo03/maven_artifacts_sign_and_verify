@@ -31,10 +31,10 @@
           </execution>
         </executions>
         <configuration>
-          <keystore>C:/Users/Alessandro/Documents/UNI/Tirocinio/multi_provenance_example/ASKeystore.jks</keystore>
+          <keystore>C:/Users/Alessandro/Documents/UNI/Tirocinio/certs/keystore.jks</keystore>
           <storepass>ppppppp</storepass>
           <keypass>ppppppp</keypass>
-          <alias>ASKeystore</alias>
+          <alias>mykey</alias>
           <storetype>JKS</storetype>
           <verbose>true</verbose>
         </configuration>
@@ -63,7 +63,7 @@
   <distributionManagement>
     <repository>
       <id>internal</id>
-      <url>file:///C:/Users/Alessandro/Documents/UNI/Tirocinio/multi_provenance_example/maven-repos/internal</url>
+      <url>file:///C:/Users/Alessandro/Documents/UNI/Tirocinio/maven_artifacts_sign_and_verify/multi_provenance_example/maven-repos/internal</url>
     </repository>
   </distributionManagement>
 </project>
