@@ -23,7 +23,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.14.0</version>
+      <version>3.17.0</version>
     </dependency>
   </dependencies>
 
@@ -73,6 +73,39 @@
             <configuration>
               <excludeArtifactIds>secure-lib</excludeArtifactIds>
               <outputDirectory>${project.build.directory}/dependency/mavenCentral</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.8.1</version>
+        <executions>
+          <execution>
+            <id>copy-pom</id>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>org.apache.commons</groupId>
+                  <artifactId>commons-lang3</artifactId>
+                  <version>3.17.0</version>
+                  <type>pom</type>
+                  <outputDirectory>${project.build.directory}/dependency/poms</outputDirectory>
+                  <destFileName>commons-lang3-3.17.0.pom</destFileName>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>junit</groupId>
+                  <artifactId>junit</artifactId>
+                  <version>3.8.1</version>
+                  <type>pom</type>
+                  <outputDirectory>${project.build.directory}/dependency/poms</outputDirectory>
+                  <destFileName>junit-3.8.1.pom</destFileName>
+                </artifactItem>
+              </artifactItems>
             </configuration>
           </execution>
         </executions>

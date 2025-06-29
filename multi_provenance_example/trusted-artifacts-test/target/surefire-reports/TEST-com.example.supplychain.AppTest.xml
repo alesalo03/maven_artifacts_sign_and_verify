@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.supplychain.AppTest" time="0.042" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.supplychain.AppTest" time="0.04" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\multi_provenance_example\trusted-artifacts-test\target\test-classes;C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\multi_provenance_example\trusted-artifacts-test\target\classes;C:\Users\Alessandro\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Alessandro\.m2\repository\com\mycompany\secure-lib\1.0-SNAPSHOT\secure-lib-1.0-SNAPSHOT.jar;C:\Users\Alessandro\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\multi_provenance_example\trusted-artifacts-test\target\test-classes;C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\multi_provenance_example\trusted-artifacts-test\target\classes;C:\Users\Alessandro\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Alessandro\.m2\repository\com\mycompany\secure-lib\1.0-SNAPSHOT\secure-lib-1.0-SNAPSHOT.jar;C:\Users\Alessandro\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IT"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\Alessandro\AppData\Local\Temp\surefire13927665568148852519\surefirebooter-20250627215012466_3.jar C:\Users\Alessandro\AppData\Local\Temp\surefire13927665568148852519 2025-06-27T21-50-12_317-jvmRun1 surefire-20250627215012466_1tmp surefire_0-20250627215012466_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Alessandro\AppData\Local\Temp\surefire12332271139837452298\surefirebooter-20250629143312549_3.jar C:\Users\Alessandro\AppData\Local\Temp\surefire12332271139837452298 2025-06-29T14-33-12_404-jvmRun1 surefire-20250629143312549_1tmp surefire_0-20250629143312549_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\multi_provenance_example\trusted-artifacts-test\target\test-classes;C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\multi_provenance_example\trusted-artifacts-test\target\classes;C:\Users\Alessandro\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Alessandro\.m2\repository\com\mycompany\secure-lib\1.0-SNAPSHOT\secure-lib-1.0-SNAPSHOT.jar;C:\Users\Alessandro\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\multi_provenance_example\trusted-artifacts-test\target\test-classes;C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\multi_provenance_example\trusted-artifacts-test\target\classes;C:\Users\Alessandro\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Alessandro\.m2\repository\com\mycompany\secure-lib\1.0-SNAPSHOT\secure-lib-1.0-SNAPSHOT.jar;C:\Users\Alessandro\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Alessandro"/>
     <property name="user.language" value="it"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Alessandro\AppData\Local\Temp\surefire13927665568148852519\surefirebooter-20250627215012466_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Alessandro\AppData\Local\Temp\surefire12332271139837452298\surefirebooter-20250629143312549_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1+9-30"/>
