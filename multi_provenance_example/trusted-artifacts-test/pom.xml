@@ -12,7 +12,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -20,11 +20,44 @@
       <artifactId>secure-lib</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+
+    <!--DIPENDENZE COMUNI UTILIZZATE PER TEST-->
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.17.0</version>
     </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>32.1.3-jre</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.15.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.13</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.17.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents.client5</groupId>
+      <artifactId>httpclient5</artifactId>
+      <version>5.3.1</version>
+    </dependency>
+
   </dependencies>
 
   <repositories>
@@ -73,39 +106,7 @@
             <configuration>
               <excludeArtifactIds>secure-lib</excludeArtifactIds>
               <outputDirectory>${project.build.directory}/dependency/mavenCentral</outputDirectory>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>3.8.1</version>
-        <executions>
-          <execution>
-            <id>copy-pom</id>
-            <goals>
-              <goal>copy</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>org.apache.commons</groupId>
-                  <artifactId>commons-lang3</artifactId>
-                  <version>3.17.0</version>
-                  <type>pom</type>
-                  <outputDirectory>${project.build.directory}/dependency/poms</outputDirectory>
-                  <destFileName>commons-lang3-3.17.0.pom</destFileName>
-                </artifactItem>
-                <artifactItem>
-                  <groupId>junit</groupId>
-                  <artifactId>junit</artifactId>
-                  <version>3.8.1</version>
-                  <type>pom</type>
-                  <outputDirectory>${project.build.directory}/dependency/poms</outputDirectory>
-                  <destFileName>junit-3.8.1.pom</destFileName>
-                </artifactItem>
-              </artifactItems>
+              <copyPom>true</copyPom>
             </configuration>
           </execution>
         </executions>
