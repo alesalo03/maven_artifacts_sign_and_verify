@@ -72,8 +72,6 @@ def get_maven_central_files(jar_dir, output_dir):
                 continue
 
             url_base, groupId, artifactId, version = result
-            pom_name = f"{artifactId}-{version}.pom"
-            pom_path = os.path.normpath(os.path.join(jar_dir, pom_name))
 
             url_jar_asc = f"{url_base}jar.asc"
             url_pom_asc = f"{url_base}pom.asc"

@@ -8,6 +8,10 @@
   <artifactId>trusted-artifacts-test</artifactId>
   <version>1.0-SNAPSHOT</version>
 
+  <properties>
+    <keystore.password>password123</keystore.password>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
