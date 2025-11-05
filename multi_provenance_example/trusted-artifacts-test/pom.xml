@@ -63,7 +63,7 @@
   <repositories>
     <repository>
       <id>internal-repo</id>
-      <url>file:///C:/Users/Alessandro/Documents/UNI/Tirocinio/maven_artifacts_sign_and_verify/multi_provenance_example/maven-repos/internal</url>
+      <url>${internalrepository.path}</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -88,7 +88,7 @@
             </goals>
             <configuration>
               <includeArtifactIds>secure-lib</includeArtifactIds>
-              <outputDirectory>${project.build.directory}/dependency/private</outputDirectory>
+              <outputDirectory>${project.build.directory}/dependency/private_dependencies</outputDirectory>
             </configuration>
           </execution>
         </executions>
@@ -127,10 +127,10 @@
           <verbose>true</verbose>
           <certs>true</certs>
           <processMainArtifact>false</processMainArtifact>
-          <archiveDirectory>${project.build.directory}/dependency/private</archiveDirectory>
-          <keystore>C:/Users/Alessandro/Documents/UNI/Tirocinio/certs/truststore.jks</keystore>
+          <archiveDirectory>${project.build.directory}/dependency/private_dependencies</archiveDirectory>
+          <keystore>${keystore.path}</keystore>
           <storetype>JKS</storetype>
-          <storepass>ppppppp</storepass>
+          <storepass>${keystore.password}</storepass>
           <errorWhenNotSigned>true</errorWhenNotSigned>
         </configuration>
       </plugin>
@@ -148,7 +148,7 @@
             <configuration>
               <executable>python</executable>
               <arguments>
-                <argument>C:\Users\Alessandro\Documents\UNI\Tirocinio\maven_artifacts_sign_and_verify\Scripts\artifacts_gpg_verification_script.py</argument>
+                <argument>${script.path}</argument>
               </arguments>
             </configuration>
           </execution>

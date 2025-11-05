@@ -3,21 +3,21 @@
   <groupId>com.mycompany</groupId>
   <artifactId>secure-lib</artifactId>
   <versioning>
-    <lastUpdated>20250627103700</lastUpdated>
+    <lastUpdated>20251105162949</lastUpdated>
     <snapshot>
-      <timestamp>20250627.103700</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20251105.162949</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0-20250627.103700-1</value>
-        <updated>20250627103700</updated>
+        <value>1.0-20251105.162949-2</value>
+        <updated>20251105162949</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0-20250627.103700-1</value>
-        <updated>20250627103700</updated>
+        <value>1.0-20251105.162949-2</value>
+        <updated>20251105162949</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
